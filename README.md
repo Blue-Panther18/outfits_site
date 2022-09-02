@@ -1,0 +1,1 @@
+This is website is an example of simple static outfits landing page
