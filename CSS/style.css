@@ -1,0 +1,204 @@
+/* Variable declarations*/
+
+:root {
+    --casualOutfitFontSize:160pt;
+    --casualOutfitFontFamily: 'Abhaya Libre', serif;
+    --textFontSize: 20px;
+    --textFontFamily: RoonySans;
+    --textMainColor: #141212;
+    --textSubmainColor: #868686;
+    --backgroundColor: #F2F4F1;
+    --navColor: #A19D9D;
+    --navBackgroundColor: #f9f9f9;
+    --hatsBackgroundColor: #e0eeea;
+    --glovesBackgroundColor: #d8e2ea;
+    --bagsBackgroundColor: #e3ddd7;
+    --jacketsBackgroundColor: #c4c4c4;
+    --shoesBackgroundColor: #ffff;
+    --jeansBackgroundColor: #e8e1db;
+    --glassesBackgroundColor: #c3c6cd;
+    --socksBackgroundColor: #ebd2cf;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+    background: var(--backgroundColor);
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 120px 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    
+
+    
+}
+
+/* Sidebar */
+.navbar_container { 
+    display: grid;
+    width: 100%;
+    height: 98vh;
+    justify-items: center;
+    background: var(--navBackgroundColor);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    
+}
+
+.user_icon {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+    background: #32A3AA;
+    color: #fff;
+    font-family: RoonySans;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-between;
+    /* gap: 100px; */
+    list-style: none;
+   
+    
+}
+.navbar ul li {
+    text-decoration: none;
+    margin: 0;
+}
+
+
+.nav_icons {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    transform-origin: 40px 10px;
+    text-align: center;
+    font-family: var(--textFontFamily);
+    font-size: var(--textFontSize);
+    color: var(--navColor);
+}
+
+#search_icons {
+    width: 24px;
+    height: 24px;
+    margin-top: 40px;
+    color: var(--textMainColor);
+}
+
+/* ================================================================= */
+/* casual section */
+.casual_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.casual_content {
+    /* display: flex;
+    flex-direction: column;
+    justify-self: center; */
+    width: 350px;
+    border: solid;
+}
+
+.casual_imgContainer {
+    max-height: 98vh;
+    overflow: hidden;
+    border-bottom: 0;
+}
+.casual_img {
+    width: 650px;
+    max-height: 150vh;
+    overflow: hidden;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+h1 {
+    font-family: 'Abhaya Libre', serif;
+    /* font-weight: bolder; */
+    font-size: 130px;
+}
+
+
+
+/* Content Section */
+.content_container {
+    width: 100%;
+    height: 99%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+   
+}
+
+ #hats {
+    background: var(--hatsBackgroundColor);
+ }
+ #gloves {
+    background: var(--glovesBackgroundColor);
+ }
+ #bags {
+    background: var(--bagsBackgroundColor);
+ }
+ #jackets {
+    background: var(--jacketsBackgroundColor);
+ }
+ #shoes {
+    background: var(--shoesBackgroundColor);
+ }
+ #jeans {
+    background: var(--jeansBackgroundColor);
+ }
+ #glasses {
+    background: var(--glassesBackgroundColor);
+ }
+ #socks {
+    background: var(--socksBackgroundColor);
+ }
+
+ .items_container{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ h3 {
+    color: var(--textMainColor);
+ }
+ 
+ p {
+    display: none;
+    color: var(--textSubmainColor);
+ }
+
+ .items_img {
+    width: 100px;
+    height: 100px;
+    
+ }
